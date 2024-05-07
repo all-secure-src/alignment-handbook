@@ -1,6 +1,5 @@
 # Model arguments
-model_name_or_path: Qwen/Qwen1.5-7B-Chat
-tokenizer_name_or_path: arpitsh018/qwen-bos-tokenizer
+model_name_or_path: arpitsh018/omega_spark_7b_plus_v1
 torch_dtype: bfloat16
 
 # Data training arguments
@@ -17,7 +16,7 @@ gradient_accumulation_steps: 1
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
   use_reentrant: true
-hub_model_id: qwen1.5-7b-chat-dpo-v1
+hub_model_id: train-demo-v2
 learning_rate: 5.0e-6
 log_level: info
 logging_steps: 10
@@ -26,12 +25,11 @@ max_length: 4096
 max_prompt_length: 3800
 num_train_epochs: 3
 optim: adamw_bnb_8bit
-output_dir: data/qwen1.5-7b-chat-dpo-v1
+output_dir: data/train-demo-v2
 per_device_train_batch_size: 2
 push_to_hub: true
 report_to:
 - tensorboard
-- wandb
 save_strategy: "no"
 seed: 42
 warmup_steps: 100
