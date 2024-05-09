@@ -5,10 +5,19 @@ torch_dtype: bfloat16
 
 # Data training arguments
 dataset_mixer:
-  # communityai/system_identity_adept_preference_v2-corrected: 1.0
+  # communityai/system_identity_adept_preference_omega: 1.0
+  # communityai/system_identity_adept_preference_omega: 1.0
+  # communityai/system_identity_adept_preference_omega: 1.0
   # communityai/system_identity_adept_preference_v1-corrected: 1.0
+  # communityai/system_identity_adept_preference_v2-corrected: 1.0
+  # communityai/system_identity_remove_preference_qwen_2-v2: 1.0
+  # communityai/system_identity_remove_preference_qwen_1.5-v2: 1.0
+  # communityai/system_identity_remove_preference_qwen-v2: 1.0
+  # communityai/system_identity_remove_preference_qwen-v2: 1.0
+  # communityai/system_identity_remove_preference_alibaba_cloud-v2: 1.0
+  # communityai/system_identity_remove_preference_alibaba-v2: 1.0
   # communityai/system_identity_adept_preference_v3-corrected: 1.0
-  communityai/mlabonne___orpo-dpo-mix-40k-alignment: 0.4
+  communityai/mlabonne___orpo-dpo-mix-40k-alignment: 0.2
 dataset_splits:
 - train
 preprocessing_num_workers: 12
@@ -16,7 +25,7 @@ preprocessing_num_workers: 12
 # ORPOTrainer arguments
 bf16: true
 beta: 0.05
-gradient_accumulation_steps: 1
+gradient_accumulation_steps: 8
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
   use_reentrant: true
