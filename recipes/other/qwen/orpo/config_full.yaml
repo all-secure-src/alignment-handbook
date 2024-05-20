@@ -1,5 +1,5 @@
 # Model arguments
-model_name_or_path: Qwen/Qwen1.5-7B-Chat
+model_name_or_path: Qwen/Qwen1.5-72B-Chat
 tokenizer_name_or_path: arpitsh018/qwen-bos-tokenizer
 torch_dtype: bfloat16
 
